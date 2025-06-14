@@ -241,10 +241,10 @@ Idx = {
 if __name__ == '__main__':
     # 定义数据集
     print("Synthetic dataset loading...")
-    fileroot_process="E:\\0_STUDY!\\7_Pytorch\\SomethingFun\\25-05\\classifier_2\\RESULT\\convX_hidX_process.txt"
-    fileroot_model="E:\\0_STUDY!\\7_Pytorch\\SomethingFun\\25-05\\classifier_2\\RESULT\\convX_hidX_model_RoundX.pth"
-    fileroot_result="E:\\0_STUDY!\\7_Pytorch\\SomethingFun\\25-05\\classifier_2\\RESULT\\convX_hidX_result_RoundX.txt.txt"
-    fileroot_evaluate="E:\\0_STUDY!\\7_Pytorch\\SomethingFun\\25-05\\classifier_2\\RESULT\\convX_hidX_evaluate_RoundX.txt"
+    fileroot_process="classifier\\2_RESULT\\convX_hidX_process.txt"#记录优化过程的文件地址
+    fileroot_model="classifier\\2_RESULT\\convX_hidX_model_RoundX.pth"#备份训练过程中的模型参数
+    fileroot_result="classifier\\2_RESULT\\convX_hidX_result_RoundX.txt.txt"#记录每一轮训练中测试集的预测标签（用于绘制混淆矩阵）
+    fileroot_evaluate="E:\\0_STUDY!\\7_Pytorch\\SomethingFun\\25-05\\classifier_2\\RESULT\\convX_hidX_evaluate_RoundX.txt"#记录每一轮训练中验证集的预测标签（用于观察过拟合情况
 
     root_dir = "E:\\0_STUDY!\\7_Pytorch\\SomethingFun\\25-05\\18_flowers\\train"
     dataset = MyDataset(root_dir)
