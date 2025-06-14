@@ -1,3 +1,9 @@
 convX_hidX 表示卷积核尺寸为X、隐藏层节点数为X， RoundX表示训练第X次后的结果
-convX_hidX_process.txt记录的是loss、训练集正确率、验证集正确率随batch增加的变化
-convX_hidX_model_RoundX.pth
+
+convX_hidX_process.txt          记录的是loss、训练集正确率、验证集正确率随batch增加的变化
+convX_hidX_model_RoundX.pth     为模型参数备份
+convX_hidX_result_RoundX.txt    记录在测试集中的预测标签
+convX_hidX_evaluate_RoundX.txt  记录在验证集中的预测标签
+
+
+绘图方式可以参考CM.ipynb文件
