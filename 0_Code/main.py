@@ -244,9 +244,9 @@ if __name__ == '__main__':
     fileroot_process="classifier\\2_RESULT\\convX_hidX_process.txt"#记录优化过程的文件地址
     fileroot_model="classifier\\2_RESULT\\convX_hidX_model_RoundX.pth"#备份训练过程中的模型参数
     fileroot_result="classifier\\2_RESULT\\convX_hidX_result_RoundX.txt.txt"#记录每一轮训练中测试集的预测标签（用于绘制混淆矩阵）
-    fileroot_evaluate="E:\\0_STUDY!\\7_Pytorch\\SomethingFun\\25-05\\classifier_2\\RESULT\\convX_hidX_evaluate_RoundX.txt"#记录每一轮训练中验证集的预测标签（用于观察过拟合情况
+    fileroot_evaluate="classifier\\2_RESULT\\convX_hidX_evaluate_RoundX.txt"#记录每一轮训练中验证集的预测标签（用于观察过拟合情况
 
-    root_dir = "E:\\0_STUDY!\\7_Pytorch\\SomethingFun\\25-05\\18_flowers\\train"
+    root_dir = "classifier\\1_DATA\\train"
     dataset = MyDataset(root_dir)
     #划分训练集和测试集
     train_size = int(Idx['train_size'] * len(dataset))
@@ -272,7 +272,7 @@ if __name__ == '__main__':
             '''
             print("loaded successfully.")
 
-            evaluate_dataset = MyDataset("E:\\0_STUDY!\\7_Pytorch\\SomethingFun\\25-05\\18_flowers\\test")
+            evaluate_dataset = MyDataset("classifier\\1_DATA\\test")
             evaluate_dataloader = DataLoader(evaluate_dataset, batch_size= Idx["batch_size"], shuffle=False, num_workers=0)
 
             # 训练模型
