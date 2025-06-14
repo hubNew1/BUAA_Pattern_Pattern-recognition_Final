@@ -34,7 +34,7 @@ class Net(nn.Module):
         conv_size=ModulFig["conv_size"],
         Hidden_size=ModulFig["Hiden_size"]):
         
-        super(Net, self).__init__()
+        super(Net, self).__init__()#这里定义了模型的结构，需要的话可以适量修改
         # 输入形状: (batch, 3, 188, 188)
         self.Relu = nn.ReLU()
         self.conv1 = nn.Conv2d(3, 32, kernel_size=conv_size, stride=1, padding=(conv_size-1)//2)  # 输出: (batch, 32, 188, 188)， 池化后：(batch, 32, 94, 94)
@@ -257,8 +257,8 @@ if __name__ == '__main__':
     print(f"Using device: {device}")
     
     
-    for convsize in range(5, 10, 2):
-        for hidensize in range(64, 257, 64):
+    for convsize in range(5, 10, 2):#遍历卷积核尺寸
+        for hidensize in range(64, 257, 64):#遍历隐藏层节点数
             model = Net(conv_size= convsize, Hidden_size= hidensize).to(device)
             filename_process = fileroot_process.replace("convX_hidX", f"conv{convsize}_hid{hidensize}")
             filename_model = fileroot_model.replace("convX_hidX", f"conv{convsize}_hid{hidensize}")
