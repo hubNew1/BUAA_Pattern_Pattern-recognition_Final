@@ -1,0 +1,2 @@
+# BUAA_Pattern_Pattern-recognition_Final
+北航模式识别大作业，这里使用的是Pytorch神经网络进行花朵的识别（注意，这个数据集的效果并不好，Test文件夹中有很多污染）
