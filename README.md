@@ -16,7 +16,8 @@ Main.0.5程序对于加载数据的部分进行了修改，这样数据会在开
 需要注意的是，这一操作需要占用约5G的内存空间（如果不加载test文件夹则需要3.5G），用的时候注意自己的内存分配。<br />
 <br />
 __**UpDate25.6.17**__:<br />
-Main.1.0中加入了transformer机制，在test文件夹中的正确率得到了有效地提升，同时对于GPU性能运用也相对充分，然而，在尝试将Conv1层也进行transfer时模型数据量过大，现存直接被爆破！！！！
+Main.1.0中加入了transformer机制，在test文件夹中的正确率得到了有效地提升，同时对于GPU性能运用也相对充分，然而，在尝试将Conv1层也进行transfer时模型数据量过大，现存直接被爆破！！！！<bar/>
+更新了Lr的选择方式，现在的learningrate会跟随loss的优化而不断改进
 
 <br />
 环境需要用到pytorch、opencv、numpy，可以用conda管理
