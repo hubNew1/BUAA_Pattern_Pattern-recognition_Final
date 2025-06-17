@@ -1,3 +1,7 @@
+'''
+这个文件是用于在不训练模型的情况下调用模型进行预测。
+'''
+
 import os
 import numpy as np
 import cv2
