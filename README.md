@@ -23,4 +23,4 @@ Main.1.0中加入了transformer机制，在test文件夹中的正确率得到了
 环境需要用到pytorch、opencv、numpy，可以用conda管理
 
 
-#  对于Main.1.0的训练结果再RESULT文件夹中的RESULT_6.3
+  对于Main.1.0的训练结果在RESULT文件夹中的RESULT_6.3
